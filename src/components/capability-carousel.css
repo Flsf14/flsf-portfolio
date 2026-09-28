@@ -1,0 +1,23 @@
+.capability { border-top: 1px solid var(--rule); padding-bottom: 2rem; }
+.home-page .capability-intro { padding-block: var(--home-section-space) 0; }
+.home-page .capability-intro h2 { max-width: 25ch; margin: 0; }
+.home-page .capability-intro > p { max-width: 54ch; margin: 0; line-height: 1.7; color: var(--muted); }
+.capability-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: clamp(2rem, 4vw, 5rem); margin-top: clamp(4rem, 8vw, 8rem); }
+.capability-copy { padding-bottom: 7rem; }
+.home-page .capability-copy h3 { max-width: 23ch; margin: 0 0 1.5rem; font-size: clamp(2rem, 3.3vw, 3.5rem); line-height: 1.18; text-wrap: balance; }
+.capability-copy > p { max-width: 48ch; margin: 0; color: var(--muted); line-height: 1.75; }
+.capability .orbit-stage { min-width: 0; }
+.capability .loop-orbit { --roll-card-size: min(205px, 17.083333vw); }
+.capability .loop-orbit[data-ready="true"] .loop-frame { height: clamp(520px, 65vw, 780px); }
+.capability .loop-orbit[data-ready="true"] .loop-card { width: var(--roll-card-size); height: var(--roll-card-size); aspect-ratio: 1; margin-left: calc(var(--roll-card-size) / -2); margin-top: calc(var(--roll-card-size) / -2); }
+.capability .loop-orbit .loop-image { aspect-ratio: 1; border-radius: 18px; }
+.capability .loop-orbit .loop-type-content { padding: 1rem; }
+.capability .loop-orbit .loop-type-content p { font-size: clamp(1.1rem, 2vw, 1.75rem); }
+.capability .loop-orbit .loop-type-content > span { font-size: .625rem; }
+@media (max-width: 900px) {
+  .capability-layout { grid-template-columns: minmax(0, 1fr); gap: 2rem; margin-top: 3rem; }
+  .capability-copy { padding-bottom: 0; }
+  .home-page .capability-copy h3 { max-width: 26ch; }
+  .capability .loop-orbit { --roll-card-size: clamp(148px, 24vw, 205px); }
+  .capability .loop-orbit[data-ready="true"] .loop-frame { height: clamp(410px, 75vw, 600px); }
+}

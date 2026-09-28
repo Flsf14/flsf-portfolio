@@ -1,0 +1,46 @@
+/* Approved Home editorial direction; other routes keep their existing typography. */
+body:has(.home-page) { --paper: #faf9f6; --paper-strong: #fff; --ink: #20211f; --muted: #62635e; --rule: rgba(32,33,31,.18); --orange: var(--blue); }
+.home-page { --display: Georgia, "Times New Roman", serif; --home-section-space: clamp(5rem,9vw,9rem); --media-radius: 22px; }
+body:has(.home-page) .nav-link { font-family: var(--body); font-size: .875rem; text-transform: none; }
+body:has(.home-page) .nav-link::after { height: 2px; }
+.home-page :is(h1,h2,h3) { font-family: var(--display); font-weight: 400; letter-spacing: -.025em; }
+.home-page .section-heading, .home-page .capability-intro { display: grid; grid-template-columns: minmax(0,1fr); justify-items: center; gap: 1.5rem; text-align: center; }
+.home-page .section-heading h2, .home-page .capability-intro h2 { max-width: 22ch; font-size: clamp(2.4rem,4.7vw,4.75rem); line-height: 1.12; text-wrap: balance; }
+.home-page .section-heading p, .home-page .capability-intro > p { max-width: 54ch; }
+.home-page .sequence-title { font-family: "Playfair Display", Georgia, serif; font-style: italic; font-weight: 500; font-size: clamp(3rem,18vw,18rem); line-height: 1.2; letter-spacing: -.025em; text-align: center; padding-block: .1em; }
+.home-page .title-arrival { justify-content: center; width: fit-content; max-width: 100%; margin-inline: auto; }
+.home-page .intro-identity p:last-child { font-family: var(--display); font-size: 1.125rem; }
+.home-page .intro-bottom p { font-family: var(--display); font-size: clamp(1.125rem,1.6vw,1.5rem); }
+.home-page .sequence-portrait { background: var(--paper); border-radius: 0; }
+.home-page .sequence-portrait-media img { transform: translateY(10%) scale(1.25); transform-origin: center bottom; }
+.home-page .sequence-portrait figcaption { border-radius: 999px; font-size: .8125rem; }
+.home-page .segment-name { font-size: clamp(2.25rem,3.6vw,3.75rem); line-height: 1.1; }
+.home-page .segment-role { font-size: clamp(1.2rem,1.7vw,1.65rem); font-weight: 400; line-height: 1.25; text-transform: none; letter-spacing: 0; }
+.home-page .entry-role { font-size: clamp(1.25rem,1.75vw,1.75rem); line-height: 1.2; }
+.home-page .segment-skills dd { font-family: var(--body); font-size: clamp(1rem,1.25vw,1.2rem); font-weight: 400; line-height: 1.55; }
+.home-page .segment-skills dt { font-family: var(--display); font-size: 1.35rem; letter-spacing: 0; text-transform: none; }
+.home-page .proof-strip { padding: clamp(3rem,5vw,5rem) var(--gutter); gap: 2rem; border: 0; }
+.home-page .proof-strip > div { min-height: 0; padding: 0; justify-content: start; border: 0; text-align: center; }
+.home-page .proof-strip strong { font-size: clamp(2rem,3.6vw,3.5rem); font-weight: 400; line-height: 1.15; }
+.home-page .text-link { font-family: var(--body); font-size: 1rem; }
+.home-page .shelters h2 { font-weight: 400; }
+.home-page .home-close { background: var(--paper); color: var(--ink); text-align: center; border-top: 1px solid var(--rule); }
+.home-page .home-close h2 { max-width: 24ch; margin-inline: auto; font-size: clamp(2.5rem,5.5vw,5.5rem); line-height: 1.12; }
+.home-page .home-close > p { margin: 1.75rem auto 2rem; color: var(--muted); font-size: 1rem; }
+.home-page .home-close .cta-row { justify-content: center; }
+.home-page .button-primary, .home-page .button-secondary { border-radius: 999px; padding-inline: 1.75rem; }
+.home-page .home-close .button-primary { background: var(--ink); border-color: var(--ink); color: white; }
+.home-page .home-close .button-primary:hover { background: var(--blue-dark); border-color: var(--blue-dark); }
+@media (min-width: 901px) {
+  .home-page [data-cinematic="true"] .sequence-portrait { margin: 16px 0 20px var(--gutter); height: calc(100% - 36px); border-right: 0; }
+}
+@media (min-width: 901px) and (max-height: 760px) {
+  .home-page .entry-role { font-size: clamp(1.2rem,1.5vw,1.5rem); }
+  .home-page .segment-name { font-size: clamp(2rem,3vw,3rem); }
+}
+@media (max-width: 900px) {
+  .home-page .sequence-title { font-size: 18vw; }
+  .home-page .sequence-portrait-media img { transform: translateY(6%) scale(1.15); }
+  .home-page .segment-name { font-size: clamp(2.25rem,8vw,3.75rem); }
+  .home-page .proof-strip > div { border: 0; }
+}

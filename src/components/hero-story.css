@@ -1,0 +1,98 @@
+/* The initial HTML is fully readable. Desktop motion is an enhancement. */
+.hero-sequence { position: relative; background: var(--paper); }
+.sequence-stage { position: relative; }
+.sequence-intro { min-height: 100svh; padding: 112px var(--gutter) 32px; display: flex; flex-direction: column; justify-content: space-between; }
+.intro-identity { display: flex; justify-content: space-between; gap: 24px; }
+.intro-identity p { margin: 0; font-size: 14px; }
+.intro-identity p:first-child { font-weight: 700; }
+.sequence-title { margin: 0; font-family: var(--display); font-weight: 800; font-size: 24.2vw; line-height: .94; letter-spacing: -.025em; color: var(--blue); }
+.title-arrival { display: flex; justify-content: space-between; width: 100%; }
+.letter-window { position: relative; display: inline-block; padding-block: .08em; margin-block: -.08em; }
+.scramble-measure { visibility: hidden; }
+.scramble-glyph { position: absolute; inset: .08em 0; text-align: center; }
+.intro-bottom { display: flex; justify-content: space-between; align-items: end; gap: 24px; padding-top: 22px; border-top: 1px solid var(--rule); }
+.intro-bottom p { margin: 0; font-size: clamp(16px, 1.5vw, 21px); line-height: 1.6; }
+.intro-bottom a { min-height: 44px; display: inline-flex; align-items: center; gap: .5rem; color: var(--blue-dark); font-weight: 700; }
+
+.sequence-profile { position: relative; }
+.sequence-portrait { position: relative; margin: 0; height: 72svh; overflow: clip; }
+.sequence-portrait-media { position: absolute; inset: 0; z-index: 1; overflow: hidden; }
+.sequence-portrait img { object-fit: contain; object-position: center bottom; }
+.sequence-portrait figcaption { position: absolute; left: 24px; bottom: 20px; z-index: 2; background: var(--paper); padding: 8px 12px; font-size: 14px; font-weight: 700; }
+.sequence-about { padding: 32px var(--gutter) 64px; }
+.about-head { display: flex; justify-content: space-between; gap: 16px; padding-bottom: 14px; border-bottom: 1px solid var(--ink); font-family: var(--mono); font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; }
+.about-head span:first-child { color: var(--blue-dark); font-weight: 700; }
+.about-head span:last-child { font-variant-numeric: tabular-nums; }
+.about-segment { padding: 32px 0; border-bottom: 1px solid var(--rule); scroll-margin-top: 100px; }
+.segment-content { width: 100%; min-width: 0; }
+.segment-name { margin: 0 0 .5rem; font-family: var(--display); font-weight: 800; font-size: clamp(2.6rem, 6vw, 4.6rem); line-height: .95; letter-spacing: -.02em; }
+.segment-role { margin: 0 0 1.4rem; color: var(--blue-dark); font-family: var(--display); font-weight: 700; font-size: clamp(1.35rem, 2.4vw, 2rem); line-height: 1.1; text-transform: uppercase; letter-spacing: .01em; }
+.segment-body { max-width: 56ch; margin: 0 0 1.4rem; font-size: clamp(1rem, 1.25vw, 1.15rem); line-height: 1.65; }
+.segment-meta { margin: 0; font-family: var(--mono); font-size: .75rem; line-height: 1.6; letter-spacing: .045em; text-transform: uppercase; color: var(--muted); }
+.segment-entries { list-style: none; margin: 0; padding: 0; display: grid; gap: 26px; }
+.segment-entries li { min-width: 0; }
+.entry-role { margin: 0 0 .4rem; font-family: var(--display); font-weight: 700; font-size: clamp(1.5rem, 2.4vw, 2.1rem); line-height: 1.05; }
+.entry-meta { display: flex; flex-wrap: wrap; gap: 3px 16px; margin: 0 0 .5rem; font-family: var(--mono); font-size: .75rem; line-height: 1.5; letter-spacing: .025em; text-transform: uppercase; color: var(--blue-dark); }
+.entry-note { max-width: 58ch; margin: 0; font-size: clamp(.95rem, 1.1vw, 1.05rem); line-height: 1.55; color: var(--muted); }
+.segment-skills { margin: 0; display: grid; gap: 22px; }
+.segment-skills > div { display: grid; gap: 8px; padding-bottom: 18px; border-bottom: 1px solid var(--rule); }
+.segment-skills > div:last-child { padding-bottom: 0; border-bottom: 0; }
+.segment-skills dt { font-family: var(--mono); font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; color: var(--blue-dark); }
+.segment-skills dd { margin: 0; font-family: var(--display); font-weight: 600; font-size: clamp(1.25rem, 2vw, 1.8rem); line-height: 1.2; }
+.sequence-chapters, .sequence-track { display: none; }
+.hero-sequence[data-cinematic="false"] .about-head span:last-child { display: none; }
+
+/* ScrollTrigger owns the pin and its spacer. Neither the photo nor its artwork moves. */
+@media (min-width: 901px) and (min-height: 620px) and (prefers-reduced-motion: no-preference) {
+  [data-cinematic="true"] .sequence-stage { height: 100svh; overflow: hidden; }
+  [data-cinematic="true"] .sequence-intro { position: absolute; inset: 0; z-index: 2; pointer-events: none; }
+  [data-cinematic="true"] .intro-bottom a { pointer-events: auto; }
+  [data-cinematic="true"] .sequence-profile { position: absolute; inset: 76px 0 0; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  [data-cinematic="true"] .sequence-portrait { height: 100%; min-width: 0; border-right: 1px solid var(--rule); }
+  [data-cinematic="true"] .sequence-about { display: grid; grid-template-rows: auto minmax(0, 1fr) auto; gap: clamp(12px, 2vh, 20px); min-width: 0; min-height: 0; padding: clamp(24px, 3vh, 36px) var(--gutter) 20px; }
+  [data-cinematic="true"] .about-panels { position: relative; min-height: 0; overflow: hidden; }
+  [data-cinematic="true"] .about-segment { position: absolute; inset: 0; display: flex; align-items: center; height: 100%; min-height: 100%; padding: 0; border: 0; }
+  [data-cinematic="true"] .segment-name { font-size: clamp(2.8rem, 4.5vw, 4.6rem); }
+  [data-cinematic="true"] .segment-role { margin-bottom: clamp(1rem, 2.5vh, 1.6rem); font-size: clamp(1.35rem, 2.2vw, 2rem); }
+  [data-cinematic="true"] .segment-body { margin-bottom: clamp(1rem, 2.5vh, 1.6rem); font-size: clamp(1rem, 1.18vw, 1.125rem); }
+  [data-cinematic="true"] .segment-entries { gap: clamp(16px, 2.7vh, 28px); }
+  [data-cinematic="true"] .entry-role { font-size: clamp(1.5rem, 2.1vw, 2rem); }
+  [data-cinematic="true"] .entry-note { font-size: clamp(.9375rem, 1.08vw, 1rem); }
+  [data-cinematic="true"] .segment-skills { gap: clamp(16px, 2.4vh, 24px); }
+  [data-cinematic="true"] .segment-skills > div { padding-bottom: clamp(12px, 2vh, 20px); }
+  [data-cinematic="true"] .segment-skills dd { font-size: clamp(1.4rem, 2vw, 1.8rem); }
+  [data-cinematic="true"] .sequence-chapters { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; border-top: 1px solid var(--rule); }
+  .sequence-chapters button { position: relative; display: flex; flex-direction: column; align-items: start; gap: 5px; min-height: 70px; padding: 12px 2px 3px; border: 0; color: var(--muted); background: transparent; cursor: pointer; font-size: .75rem; line-height: 1.35; text-align: left; transition: color 180ms ease; }
+  .sequence-chapters button::before { position: absolute; content: ""; height: 3px; background: var(--blue); top: -1px; inset-inline: 0; transform: scaleX(0); transform-origin: left; transition: transform 180ms ease; }
+  .sequence-chapters button span { font-family: var(--mono); font-size: .7rem; font-variant-numeric: tabular-nums; }
+  .sequence-chapters button[aria-current], .sequence-chapters button:hover { color: var(--blue-dark); }
+  .sequence-chapters button[aria-current] { font-weight: 700; }
+  .sequence-chapters button[aria-current]::before { transform: scaleX(1); }
+  [data-cinematic="true"] .sequence-track { display: block; position: absolute; bottom: 0; left: 0; right: 0; height: 3px; pointer-events: none; }
+  .sequence-track > div { height: 100%; background: var(--blue); transform-origin: left; }
+}
+
+/* Keep the four complete CV groups within shorter desktop viewports. */
+@media (min-width: 901px) and (min-height: 620px) and (max-height: 760px) and (prefers-reduced-motion: no-preference) {
+  [data-cinematic="true"] .sequence-about { padding-block: 20px 16px; gap: 12px; }
+  [data-cinematic="true"] .about-head { padding-bottom: 10px; }
+  [data-cinematic="true"] .sequence-chapters button { min-height: 60px; padding-top: 8px; }
+  [data-cinematic="true"] .segment-entries { gap: 14px; }
+  [data-cinematic="true"] .entry-role { font-size: clamp(1.4rem, 1.8vw, 1.75rem); }
+  [data-cinematic="true"] .entry-note { font-size: .9375rem; line-height: 1.4; }
+}
+
+@media (max-width: 900px) {
+  .sequence-intro { min-height: 88svh; padding-top: 104px; }
+  .intro-identity { flex-direction: column; gap: 2px; }
+  .sequence-title { font-size: 23vw; }
+  .intro-bottom { flex-direction: column; align-items: start; gap: 14px; }
+  .sequence-portrait { height: min(72svh, 680px); margin-inline: var(--gutter); }
+  .about-segment { padding-block: 44px; }
+  .segment-name { font-size: clamp(2.6rem, 11vw, 4rem); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sequence-intro { min-height: 80svh; }
+  .sequence-about { max-width: 1000px; margin-inline: auto; }
+}

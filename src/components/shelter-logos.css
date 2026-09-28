@@ -1,0 +1,24 @@
+.shelters { border-top: 1px solid var(--rule); padding-block: clamp(5rem, 10vw, 10rem); }
+.shelters-intro p { margin: 0; max-width: 54ch; }
+.shelter-rows { display: grid; gap: .875rem; overflow: hidden; padding-block: 1.5rem; mask-image: linear-gradient(90deg, transparent, black 7%, black 93%, transparent); }
+.shelter-marquee { width: 100%; overflow: hidden; }
+.shelter-marquee-track { display: flex; width: max-content; animation: shelter-marquee 30s linear infinite; }
+.shelter-marquee-reverse .shelter-marquee-track { animation-direction: reverse; animation-duration: 34s; }
+.shelter-marquee-group { list-style: none; margin: 0; padding: 0 1rem 0 0; display: flex; gap: 1rem; }
+.shelter-tile { position: relative; width: clamp(132px, 14vw, 196px); height: 76px; flex: 0 0 clamp(132px, 14vw, 196px); display: grid; place-items: center; overflow: hidden; padding: .75rem 1rem; border: 1px solid rgba(32, 33, 31, .14); border-radius: 12px; background: var(--paper); }
+.shelter-mark { position: relative; z-index: 1; font-family: var(--body); font-size: clamp(.6875rem, .85vw, .8125rem); font-weight: 700; line-height: 1.3; text-align: center; text-wrap: balance; }
+.shelter-logo { position: absolute; inset: 0; width: 100%; height: 100%; padding: .75rem 1rem; object-fit: contain; background: var(--paper); }
+@keyframes shelter-marquee { to { transform: translateX(-50%); } }
+@media (max-width: 600px) {
+  .shelter-rows { margin-inline: calc(var(--page-gutter) * -1); mask-image: linear-gradient(90deg, transparent, black 4%, black 96%, transparent); }
+  .shelter-tile { width: 132px; flex-basis: 132px; height: 68px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .shelter-rows { overflow: visible; mask-image: none; }
+  .shelter-marquee { overflow: visible; }
+  .shelter-marquee-track { width: 100%; animation: none; }
+  .shelter-marquee-group { width: 100%; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .shelter-marquee-group[aria-hidden="true"] { display: none; }
+  .shelter-tile { width: auto; min-width: 0; }
+}
+

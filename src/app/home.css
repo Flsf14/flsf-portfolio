@@ -1,0 +1,34 @@
+/* Hallmark · macrostructure: Editorial Studio · tone: direct · anchor hue: cobalt
+   Design system: DESIGN.md. Work carries the proof; supporting sections stay quiet. */
+.home-page { --home-section-space: clamp(4rem, 6vw, 7rem); }
+.home-page > section[id] { scroll-margin-top: 96px; }
+.home-page .section-heading { grid-template-columns: minmax(0, 1.4fr) minmax(260px, .7fr); gap: clamp(2rem, 5vw, 5rem); margin-bottom: clamp(3rem, 5vw, 5.5rem); }
+.home-page .section-heading h2 { font-size: clamp(3.5rem, 6.4vw, 6rem); line-height: 1; text-wrap: balance; }
+.home-page .section-heading p { max-width: 42ch; color: var(--muted); }
+.home-page .selected-work, .home-page .home-close { padding-block: var(--home-section-space); }
+.home-page .home-close { background: var(--blue); color: var(--paper-strong); }
+.home-page .home-close h2 { max-width: 20ch; font-size: clamp(3.5rem, 7vw, 6.5rem); line-height: 1; text-wrap: balance; }
+.home-page .home-close .button-primary { color: var(--blue-dark); background: var(--paper-strong); border-color: var(--paper-strong); }
+.home-page .home-close .button-secondary { color: var(--paper-strong); border-color: var(--paper-strong); }
+.home-page .home-close .button-primary:hover { background: var(--paper); }
+.home-page .home-close .button-secondary:hover { background: var(--blue-dark); }
+.home-page .proof-strip { grid-template-columns: repeat(3, minmax(0, 1fr)); border-color: var(--rule); }
+.home-page .proof-strip > div { min-height: 170px; padding-block: 2rem; justify-content: center; border-color: var(--rule); }
+.home-page .proof-strip strong { font-size: clamp(2.5rem, 4vw, 4rem); line-height: 1; }
+.home-page .proof-strip span { font-family: var(--body); font-size: .875rem; line-height: 1.5; letter-spacing: 0; text-transform: none; color: var(--muted); }
+.home-page .shelters { padding-block: clamp(3rem, 5vw, 5rem); }
+.home-page .shelters .section-heading { margin-bottom: 2.5rem; }
+.home-page .shelters h2 { max-width: 20ch; font-size: clamp(2.5rem, 3.5vw, 3.5rem); font-weight: 700; }
+.home-page .text-link { min-height: 44px; display: inline-flex; align-items: center; gap: .65rem; }
+.home-page .button-primary, .home-page .button-secondary { white-space: nowrap; transition: background-color 180ms ease, color 180ms ease; }
+@media (max-width: 900px) {
+  .home-page .section-heading { grid-template-columns: minmax(0, 1fr); }
+  .home-page .proof-strip > div { border-bottom: 0; border-right: 1px solid var(--rule); }
+  .home-page .proof-strip > div:last-child { border-right: 0; }
+}
+@media (max-width: 560px) {
+  .home-page .proof-strip { grid-template-columns: minmax(0, 1fr); }
+  .home-page .proof-strip > div { min-height: 120px; border-right: 0; border-bottom: 1px solid var(--rule); }
+  .home-page .proof-strip > div:last-child { border-bottom: 0; }
+  .home-page .home-close .cta-row { align-items: stretch; flex-direction: column; }
+}
