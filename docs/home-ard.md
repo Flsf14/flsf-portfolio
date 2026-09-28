@@ -36,7 +36,7 @@ A gallery is observed at the actual frame rather than the whole section, so surr
 
 Import latin-500-italic.css from @fontsource/playfair-display on Home. Restrict that face to the Portfolio title; existing serif headings and Manrope body retain their assigned roles. Hero letter spans preserve the scramble and erase ref contract with sufficient italic line-height and overflow clearance.
 
-Copy root my.webp to public/my.webp without altering the image. Use Next Image fill/contain, bottom alignment and corrected alt text for the PENS jacket. Remove the old portrait-field DOM and associated texture rules.
+Copy `assets/source/portraits/my.webp` to `public/my.webp` without altering the image. Use Next Image fill/contain, bottom alignment and corrected alt text for the PENS jacket. Remove the old portrait-field DOM and associated texture rules.
 
 Gallery cards use Next Image with responsive sizes and explicit aspect ratios. Current artwork is sourced from existing portfolio previews. The image-less editorial case remains a text plate, not invented project artwork. Gallery spacing and transforms are scoped in loop-carousel.css; delete obsolete pinned capability styling to avoid competing implementations.
 

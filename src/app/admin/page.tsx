@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { isSupabaseConfigured } from "@/lib/supabase";
-import { projects } from "@/lib/projects";
+import { projects } from "@/data/projects";
 
 export const metadata = { title: "Admin" };
 export const dynamic = "force-dynamic";

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { shelters } from "@/lib/shelters";
+import { shelters } from "@/data/shelters";
 import "./shelter-logos.css";
 
 function ShelterRow({ items, reverse = false }: {

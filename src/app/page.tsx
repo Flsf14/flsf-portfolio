@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { Hero } from "@/components/hero";
-import { CapabilityCarousel } from "@/components/capability-carousel";
-import { ShelterLogos } from "@/components/shelter-logos";
-import { SelectedWorkCarousel } from "@/components/selected-work-carousel";
-import { projects } from "@/lib/projects";
+import { Hero } from "@/components/home/hero";
+import { CapabilityCarousel } from "@/components/home/capability-carousel";
+import { ShelterLogos } from "@/components/home/shelter-logos";
+import { SelectedWorkCarousel } from "@/components/home/selected-work-carousel";
+import { projects } from "@/data/projects";
 import "./home.css";
 import "./home-editorial.css";
 import "@fontsource/playfair-display/latin-500-italic.css";

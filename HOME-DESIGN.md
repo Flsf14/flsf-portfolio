@@ -5,11 +5,11 @@ Approved on 2026-09-28. This Home-specific direction supersedes the condensed ty
 - Portfolio: title case, locally hosted Playfair Display 500 Italic. Other headings and subheadings: Georgia, Times New Roman, serif; regular weight. Body: Manrope. Record metadata: JetBrains Mono.
 - Off-white #faf9f6, ink #20211f, muted #62635e, existing cobalt #1055f5. Cobalt also replaces the orange focus/navigation accent on Home.
 - Centered section introductions, generous section spacing, 22px media corners, pill CTA, open achievement figures.
-- Portrait uses the owner's my.webp, copied unchanged from the project root. Its background matches the page without halftone or a contrasting panel.
+- Portrait uses the owner's `assets/source/portraits/my.webp`, copied unchanged to `public/my.webp`. Its background matches the page without halftone or a contrasting panel.
 - Capability has one static message followed by a slow circular loop. Selected Work uses a horizontal looping coverflow whose active card links directly to the case study. Both share a 7.5-second item rhythm, ignore pointer hover, omit manual pointer/trackpad movement and retain keyboard and reduced-motion behavior. Closing section has one primary contact CTA.
 - Existing scramble/erase, pinned four-chapter CV, reduced-motion reading order and content-fit guards remain. The former capability pin is replaced by autonomous playback.
 - Shelter presents the twelve owner-specified names in two continuously looping horizontal rows moving in opposite directions, following the supplied video reference. Logo paths remain optional until original logo files are supplied; no thumbnail substitutes. Reduced motion uses two static rows.
-- CSS implementation: src/app/home-editorial.css, loaded after the existing Home styles. Supporting routes retain their existing display font.
+- CSS implementation: `src/app/home-editorial.css`, loaded after the existing Home styles. Home components live under `src/components/home`; supporting routes retain their existing display font.
 
 Validation: code-only review requested by the user. Browser appearance and motion have not been visually verified for this revision. System serif rendering can vary across platforms.
 

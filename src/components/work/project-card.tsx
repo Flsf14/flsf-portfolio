@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { Project } from "@/lib/projects";
+import type { Project } from "@/data/projects";
 
 export function ProjectCard({ project, priority = false }: { project: Project; priority?: boolean }) {
   return (

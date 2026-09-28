@@ -1,8 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { ProjectCard } from "@/components/project-card";
-import type { Project } from "@/lib/projects";
+import { ProjectCard } from "@/components/work/project-card";
+import type { Project } from "@/data/projects";
 
 export function WorkFilter({ projects }: { projects: Project[] }) {
   const filters = ["Semua", ...Array.from(new Set(projects.flatMap((project) => project.disciplines))).sort()];

@@ -1,5 +1,5 @@
 import { LoopCarousel } from "@/components/ui/loop-carousel";
-import type { Project } from "@/lib/projects";
+import type { Project } from "@/data/projects";
 
 export function SelectedWorkCarousel({ projects }: { projects: Project[] }) {
   return <LoopCarousel mode="coverflow" label="Karya pilihan Afsun Filosof" slides={projects.map((project) => ({

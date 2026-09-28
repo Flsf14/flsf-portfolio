@@ -42,7 +42,7 @@ Recruiters, creative leads and potential clients should understand Afsun's profe
 
 ## Non-goals and constraints
 
-No redesign of supporting routes, CMS, fabricated artwork, Tailwind/shadcn migration, Three.js, Lottie, or new mobile cinematic story. Only the Playfair font package is added. Preserve the original my.webp in the project root and copy it into public for serving.
+No redesign of supporting routes, CMS, fabricated artwork, Tailwind/shadcn migration, Three.js, Lottie, or new mobile cinematic story. Only the Playfair font package is added. Preserve the original `my.webp` under `assets/source/portraits` and copy it into `public` for serving.
 
 ## Verification and limits
 

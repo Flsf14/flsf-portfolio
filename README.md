@@ -21,6 +21,22 @@ Buka `http://localhost:3000`.
 
 Tanpa konfigurasi Supabase, form kontak menampilkan instruksi email langsung dan dashboard berjalan dalam mode baca data lokal. Website tidak berpura-pura menyimpan data.
 
+## Struktur project
+
+```text
+assets/source/portraits/  Aset portrait asli sebelum disajikan ke web
+public/                   Aset statis yang dilayani Next.js
+src/app/                  Route, layout, dan route-level styles
+src/components/home/      Komponen khusus halaman Home
+src/components/layout/    Komponen layout global
+src/components/forms/     Form interaktif
+src/components/work/      Komponen daftar dan kartu karya
+src/components/ui/        Primitive UI yang dapat digunakan ulang
+src/data/                 Data statis proyek dan shelter
+src/lib/                  Integrasi layanan dan helper umum
+supabase/migrations/      Skema database
+```
+
 ## Verifikasi
 
 ```bash

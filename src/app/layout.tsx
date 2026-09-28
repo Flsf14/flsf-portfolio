@@ -7,7 +7,7 @@ import "@fontsource/manrope/400.css";
 import "@fontsource/manrope/700.css";
 import "@fontsource/jetbrains-mono/400.css";
 import "./globals.css";
-import { SiteHeader } from "@/components/site-header";
+import { SiteHeader } from "@/components/layout/site-header";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 

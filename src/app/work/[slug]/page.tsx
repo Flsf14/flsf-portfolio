@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getProject, projects } from "@/lib/projects";
+import { getProject, projects } from "@/data/projects";
 
 export function generateStaticParams() {
   return projects.map((project) => ({ slug: project.slug }));

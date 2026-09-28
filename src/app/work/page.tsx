@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { WorkFilter } from "@/components/work-filter";
-import { projects } from "@/lib/projects";
+import { WorkFilter } from "@/components/work/work-filter";
+import { projects } from "@/data/projects";
 
 export const metadata: Metadata = { title: "Work", description: "Arsip karya multidisiplin Afsun Filosof." };
 

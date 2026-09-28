@@ -35,7 +35,7 @@ Visitors often arrive from a CV, job application, shared project link, or profes
 - The Home page opens with a large PORTFOLIO statement, transitions into a sticky portrait and changing CV-derived narrative, then leads into selected work and professional proof.
 - Desktop may use scroll pinning. Mobile must use a natural vertical sequence and preserve access to all content.
 - Public facts and metrics must come from the supplied CV or later user-approved evidence.
-- The project currently contains one approved transparent portrait asset at `afsun.webp`.
+- The project currently contains approved transparent portrait source assets under `assets/source/portraits`.
 - Exact production Supabase credentials, final domain, original project assets, and downloadable CV file are open deployment/content decisions.
 
 ## Brand Commitments
@@ -48,7 +48,7 @@ Visitors often arrive from a CV, job application, shared project link, or profes
 ## Evidence on Hand
 
 - Source CV and portfolio PDF: `D:/BACKUP - Download/berkas/CV/compress/CV Indo + Portfolio - Afsun Filosof  - September.pdf`.
-- Transparent portrait: `afsun.webp`.
+- Transparent portrait source: `assets/source/portraits/afsun.webp`.
 - Confirmed CV evidence includes 1.7M+ views in 77 days, 180+ cross-format assets, 90-110+ monthly design assets, responsibility across eight sub-brands, a 93.4 internship evaluation, and third place in a national campus magazine competition.
 - Project visuals embedded in the PDF are references only. Full-resolution source assets have not yet been supplied and must not be presented as production originals.
 - No verified testimonials are currently available and none may be fabricated.
