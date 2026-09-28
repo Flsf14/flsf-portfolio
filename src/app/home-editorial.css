@@ -12,7 +12,8 @@ body:has(.home-page) .nav-link::after { height: 2px; }
 .home-page .intro-identity p:last-child { font-family: var(--display); font-size: 1.125rem; }
 .home-page .intro-bottom p { font-family: var(--display); font-size: clamp(1.125rem,1.6vw,1.5rem); }
 .home-page .sequence-portrait { background: var(--paper); border-radius: 0; }
-.home-page .sequence-portrait-media img { transform: translateY(10%) scale(1.25); transform-origin: center bottom; }
+.home-page .sequence-portrait-media { top: clamp(18px,3vh,28px); }
+.home-page .sequence-portrait-media img { transform: scale(1.25); transform-origin: center top; }
 .home-page .sequence-portrait figcaption { border-radius: 999px; font-size: .8125rem; }
 .home-page .segment-name { font-size: clamp(2.25rem,3.6vw,3.75rem); line-height: 1.1; }
 .home-page .segment-role { font-size: clamp(1.2rem,1.7vw,1.65rem); font-weight: 400; line-height: 1.25; text-transform: none; letter-spacing: 0; }
@@ -40,7 +41,8 @@ body:has(.home-page) .nav-link::after { height: 2px; }
 }
 @media (max-width: 900px) {
   .home-page .sequence-title { font-size: 18vw; }
-  .home-page .sequence-portrait-media img { transform: translateY(6%) scale(1.15); }
+  .home-page .sequence-portrait-media { top: 12px; }
+  .home-page .sequence-portrait-media img { transform: scale(1.15); transform-origin: center top; }
   .home-page .segment-name { font-size: clamp(2.25rem,8vw,3.75rem); }
   .home-page .proof-strip > div { border: 0; }
 }
