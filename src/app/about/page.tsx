@@ -14,7 +14,7 @@ const experience = [
 
 export default function AboutPage() {
   return (
-    <div className="page-shell about-page">
+    <div className="page-shell public-page about-page">
       <header className="about-hero">
         <div>
           <h1>Ide yang jelas.<br />Eksekusi yang disiplin.</h1>

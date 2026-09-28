@@ -20,7 +20,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
   if (!project) notFound();
 
   return (
-    <article className="project-page">
+    <article className="project-page public-page">
       <header className="project-hero section-shell">
         <Link className="back-link" href="/work">← Kembali ke Work</Link>
         <p>{project.client} · {project.year}</p>

@@ -5,7 +5,7 @@ export const metadata: Metadata = { title: "Contact", description: "Hubungi Afsu
 
 export default function ContactPage() {
   return (
-    <div className="page-shell contact-page">
+    <div className="page-shell public-page contact-page">
       <header className="page-intro">
         <h1>Mari membuat sesuatu yang jelas, berguna, dan layak diingat.</h1>
         <p>Ceritakan konteks, tujuan, dan ruang lingkupnya. Saya akan membalas dengan pertanyaan atau langkah berikutnya yang paling relevan.</p>

@@ -6,7 +6,7 @@ export const metadata: Metadata = { title: "Work", description: "Arsip karya mul
 
 export default function WorkPage() {
   return (
-    <div className="page-shell work-page">
+    <div className="page-shell public-page work-page">
       <header className="page-intro">
         <h1>Work</h1>
         <p>Identitas, konten, editorial, video, dan pengalaman digital. Pilih disiplin atau telusuri semuanya sebagai satu arsip kerja.</p>

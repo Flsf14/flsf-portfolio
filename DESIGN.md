@@ -1,32 +1,31 @@
 ---
 name: Afsun Filosof Portfolio
-description: A creative portfolio with a serif MiMo-inspired editorial Home and a condensed production dossier on supporting routes.
+description: A cohesive serif editorial portfolio across Home, Work, About, Contact, and project case studies.
 colors:
-  paper: "#f4f1e8"
-  paper-strong: "#fffdf7"
-  ink: "#11110f"
-  muted: "#5e5b53"
+  paper: "#faf9f6"
+  paper-strong: "#ffffff"
+  ink: "#20211f"
+  muted: "#62635e"
   cobalt: "#1055f5"
   cobalt-dark: "#073ab4"
-  active-orange: "#f05a24"
-  rule: "rgba(17, 17, 15, 0.3)"
+  rule: "rgba(32, 33, 31, 0.18)"
 typography:
   display:
-    fontFamily: '"Barlow Condensed", "Arial Narrow", sans-serif'
-    fontSize: "clamp(5rem, 13vw, 12rem)"
-    fontWeight: 800
-    lineHeight: 0.82
+    fontFamily: 'Georgia, "Times New Roman", serif'
+    fontSize: "clamp(4rem, 9vw, 8.5rem)"
+    fontWeight: 400
+    lineHeight: 1.02
     letterSpacing: "-0.025em"
   headline:
-    fontFamily: '"Barlow Condensed", "Arial Narrow", sans-serif'
-    fontSize: "clamp(2.8rem, 5vw, 5rem)"
-    fontWeight: 700
-    lineHeight: 0.9
+    fontFamily: 'Georgia, "Times New Roman", serif'
+    fontSize: "clamp(2.3rem, 4vw, 4rem)"
+    fontWeight: 400
+    lineHeight: 1.1
   title:
-    fontFamily: '"Barlow Condensed", "Arial Narrow", sans-serif'
-    fontSize: "clamp(1.6rem, 2.5vw, 2.8rem)"
-    fontWeight: 700
-    lineHeight: 0.95
+    fontFamily: 'Georgia, "Times New Roman", serif'
+    fontSize: "clamp(2.5rem, 4.5vw, 4.75rem)"
+    fontWeight: 400
+    lineHeight: 1.05
   body:
     fontFamily: '"Manrope", sans-serif'
     fontSize: "1rem"
@@ -39,7 +38,9 @@ typography:
     lineHeight: 1.5
     letterSpacing: "0.08em"
 rounded:
-  square: "0"
+  media: "22px"
+  field: "14px"
+  control: "999px"
 spacing:
   compact: "1rem"
   block: "1.5rem"
@@ -49,7 +50,7 @@ components:
   button-primary:
     backgroundColor: "{colors.cobalt}"
     textColor: "#ffffff"
-    rounded: "{rounded.square}"
+    rounded: "{rounded.control}"
     padding: "0.85rem 1.25rem"
     height: "50px"
   button-primary-hover:
@@ -57,7 +58,7 @@ components:
   button-secondary:
     backgroundColor: "transparent"
     textColor: "{colors.ink}"
-    rounded: "{rounded.square}"
+    rounded: "{rounded.control}"
     padding: "0.85rem 1.25rem"
     height: "50px"
   button-secondary-hover:
@@ -66,17 +67,17 @@ components:
   input-line:
     backgroundColor: "transparent"
     textColor: "{colors.ink}"
-    rounded: "{rounded.square}"
+    rounded: "{rounded.field}"
     padding: "0.85rem 0"
   input-area:
     backgroundColor: "transparent"
     textColor: "{colors.ink}"
-    rounded: "{rounded.square}"
+    rounded: "{rounded.field}"
     padding: "1rem"
   filter-default:
     backgroundColor: "transparent"
     textColor: "{colors.ink}"
-    rounded: "{rounded.square}"
+    rounded: "{rounded.control}"
     padding: "0.55rem 0.75rem"
   filter-active:
     backgroundColor: "transparent"
@@ -87,23 +88,23 @@ components:
 
 ## Overview
 
-**Creative North Star: "The Creative Production Dossier"**
+**Creative North Star: "The Editorial Creative Profile"**
 
-The portfolio behaves like an authored production archive rather than a decorative showcase. Warm paper is the working surface; cobalt is the production ink; carbon text, strict rules, measured labels, and oversized condensed type turn professional evidence into the visual material.
+The portfolio behaves like an authored editorial profile rather than a decorative showcase. Warm paper is the reading surface; cobalt is the active ink; serif statements, calm body copy, measured labels, and generous spacing connect professional evidence with the work itself.
 
 The system is direct, editorial, and deliberately flat. It moves between monumental statements and dense factual records without losing the same production-floor grammar. Imagery is allowed to lead, but it remains framed by literal metadata, proof, and visible structure.
 
 **Key Characteristics:**
 
-- Warm paper ground with saturated cobalt used for statements and proof.
-- Oversized condensed headlines paired with readable body copy and mono production labels.
-- Square geometry, thin rules, and layout divisions instead of decorative containers.
+- Warm paper ground with saturated cobalt used for links, focus, and selected states.
+- Editorial serif headlines paired with readable body copy and mono record labels.
+- Soft media corners, pill controls, thin rules, and open layouts instead of decorative containers.
 - Responsive editorial grids that collapse into a complete natural reading sequence.
 - Motion that reveals progression and always yields to a readable reduced-motion form.
 
 ## Colors
 
-The palette reads as cobalt production ink on warm stock, supported by carbon text, graphite annotations, a cleaner proof surface, and one orange interaction signal.
+The palette reads as cobalt production ink on warm stock, supported by carbon text, graphite annotations, and a cleaner proof surface.
 
 ### Primary
 
@@ -112,7 +113,7 @@ The palette reads as cobalt production ink on warm stock, supported by carbon te
 
 ### Secondary
 
-- **Active Orange:** Reserved for focus outlines and active navigation underlines, where a state change must be unmistakable.
+- **Cobalt State:** Focus outlines, active navigation, links, and selected controls share the existing cobalt.
 
 ### Neutral
 
@@ -124,27 +125,31 @@ The palette reads as cobalt production ink on warm stock, supported by carbon te
 
 **The Cobalt Proof Rule.** Use cobalt for authored statements, evidence, and active selection; do not distribute it as ambient decoration.
 
-**The Orange State Rule.** Orange means active focus or navigation state. Its rarity is part of the hierarchy.
+**The Cobalt State Rule.** Cobalt marks interaction and selection; it is not distributed as ambient decoration.
 
 ## Typography
 
-**Display Font:** Barlow Condensed (with Arial Narrow and sans-serif fallbacks)  
+**Display Font:** Georgia (with Times New Roman and serif fallbacks)
 **Body Font:** Manrope (with a sans-serif fallback)  
 **Label/Mono Font:** JetBrains Mono (with a monospace fallback)
 
-**Character:** The condensed face supplies the dossier's loud editorial voice, Manrope keeps long Indonesian copy calm and legible, and JetBrains Mono makes metadata feel measured and literal.
+**Character:** The serif face supplies a calm authored voice, Manrope keeps Indonesian copy direct and legible, and JetBrains Mono makes metadata feel measured and literal.
 
 ### Hierarchy
 
-- **Display:** Heavy, tightly set condensed type for page names, section statements, and large evidence-led headings.
-- **Headline:** Condensed headings for case-study sections, story panels, and medium-scale section titles.
-- **Title:** Compact condensed titles for record rows, project names, and repeated content units.
+- **Display:** Regular serif type for page names and large authored statements.
+- **Headline:** Regular serif headings for case-study sections, story panels, and section titles.
+- **Title:** Serif titles for project names and important repeated content units.
 - **Body:** Manrope for explanations and narrative copy, normally constrained between 38ch and 65ch.
 - **Label:** Small mono text with loose tracking, usually uppercase, for counts, dates, disciplines, status, and production metadata.
 
 **The Three-Voice Rule.** Condensed type speaks, Manrope explains, and mono type measures; do not exchange their roles casually.
 
 **The Monument-and-Record Rule.** Pair oversized type with restrained factual text so scale always carries meaning rather than spectacle alone.
+
+### Public route type tokens
+
+Supporting public routes use named responsive steps for About, Contact, project titles, section titles, summaries, record titles, navigation, and mobile reductions. These values live as `--editorial-*` properties in `editorial-pages.css`; route components reuse them instead of introducing local literal sizes.
 
 ## Layout
 
@@ -158,24 +163,26 @@ At 900px, multi-column stories, project cards, records, case studies, About, Con
 
 ## Elevation & Depth
 
-The system is flat by design and defines depth through sticky layering, scale, tonal contrast, image planes, and one-pixel rules. It does not use box shadows. The fixed header gains separation through a translucent warm-paper fill and 14px backdrop blur; media hover uses a restrained scale change instead of simulated elevation.
+The system is flat by design and defines depth through sticky layering, scale, tonal contrast, image planes, and one-pixel rules. Decorative surfaces do not use box shadows. The fixed header gains separation through a translucent warm-paper fill and 14px backdrop blur; media hover uses a restrained scale change instead of simulated elevation.
+
+Public Work and case-study media use one restrained cool shadow token, `--editorial-media-shadow`, to separate large image planes from the warm paper. Text, forms, lists, and structural sections remain flat.
 
 **The Structural Depth Rule.** Create hierarchy with position, crop, rule, and tonal field; do not add shadow to make an undecided surface feel important.
 
 ## Shapes
 
-Corners remain square across buttons, fields, media frames, status boxes, and structural panels. Thin one-pixel borders and underlines divide the page into records. The recurring expressive geometry is a clipped 4:3 media plane and the angled cobalt stripe behind the portrait, not rounded containers.
+Media frames use 22px corners, textareas and feedback use 14px corners, and compact controls use a full pill. Thin one-pixel borders and underlines divide the page into records. Ordinary content stays open on the page without enclosing card shells.
 
-**The Square Record Rule.** Interactive and informational surfaces retain square corners; curvature would weaken the production-document character.
+**The Shape Role Rule.** Curvature communicates function: media is softly framed, compact controls are pills, fields use a smaller radius, and document structure remains flat.
 
 ## Components
 
 ### Buttons
 
-- **Shape:** Square, bordered, and at least 50px high, with compact horizontal padding.
+- **Shape:** Pill-shaped, bordered, and at least 48px high, with compact horizontal padding.
 - **Primary:** Cobalt field with white text; hover deepens to dark cobalt. Disabled state keeps the form but reduces opacity.
 - **Secondary:** Transparent warm-paper field with carbon border and text; hover inverts to carbon with white text.
-- **Focus:** The global 3px orange outline sits 4px outside the component.
+- **Focus:** The global 3px cobalt outline sits 4px outside the component.
 
 ### Chips
 
@@ -191,13 +198,13 @@ Corners remain square across buttons, fields, media frames, status boxes, and st
 
 ### Inputs / Fields
 
-- **Style:** Text inputs use only a carbon bottom rule; textareas use a complete one-pixel carbon frame. Both remain transparent and square.
-- **Focus:** The shared orange focus outline supplies the visible keyboard state.
-- **Status:** Submission feedback uses a square ruled notice; success and error colors are semantic exceptions, not brand accents.
+- **Style:** Text inputs use only a carbon bottom rule; textareas use a complete one-pixel carbon frame and 14px radius. Both remain transparent.
+- **Focus:** The shared cobalt focus outline supplies the visible keyboard state.
+- **Status:** Submission feedback uses a restrained ruled notice; success and error colors are semantic exceptions, not brand accents.
 
 ### Navigation
 
-The fixed 76px header combines a stacked condensed wordmark, a mono role label, and uppercase condensed links. Desktop active and hover states grow a four-pixel orange underline from the edge. At 900px, the role label disappears and the navigation becomes a full-width ruled menu with 48px-minimum targets.
+The fixed 76px header combines a stacked wordmark, a mono role label, and centered Manrope links. Desktop active and hover states grow a two-pixel cobalt underline from the edge. At 900px, the role label disappears and the navigation becomes a full-width ruled menu with 48px-minimum targets.
 
 ### Sticky Profile Story
 
@@ -209,7 +216,7 @@ The pinned mode applies only above 900px wide and at least 620px high, with no r
 
 ### Proof Strip
 
-Home uses three factual records with their employer context: 1.7M+ views in 77 days, 180+ cross-format assets, and eight managed sub-brands. Figures use cobalt condensed type; their descriptions use readable body type. Internship evaluation remains within the CV. The records collapse to one column on small screens.
+Home uses three factual records with their employer context: 1.7M+ views in 77 days, 180+ cross-format assets, and eight managed sub-brands. Figures use cobalt serif type; their descriptions use readable body type. Internship evaluation remains within the CV. The records collapse to one column on small screens.
 
 ### Home capability orbit
 
@@ -221,17 +228,17 @@ For desktop viewport heights of 620–760px, CV panel spacing and role headings 
 
 ### Editorial Studio refinement
 
-The Home narrative is hero/CV, capability stories, concise proof, selected work, professional affiliations, and contact. Duplicate discipline and career lists are removed from Home; complete career content remains in the hero and About. PORTFOLIO retains monumental scale. Capability and work headings are secondary; affiliations use a quieter heading and open ruled rows. The cobalt closing section contains a concrete project contact action. Shared routes, fonts, palette, square geometry, and factual CV content remain intact.
+The Home narrative is hero/CV, capability stories, concise proof, selected work, professional affiliations, and contact. Duplicate discipline and career lists are removed from Home; complete career content remains in the hero and About. PORTFOLIO retains monumental scale. Capability and work headings are secondary; affiliations use a quieter heading and open ruled rows. All public routes share the serif hierarchy, warm paper, cobalt interaction states, soft media corners, pill controls, and factual CV content.
 
 ## Do's and Don'ts
 
 ### Do:
 
 - **Do** let verified work, outcomes, and production metadata drive the visual hierarchy.
-- **Do** combine monumental condensed headings with short, readable Manrope explanations.
-- **Do** use thin rules and square geometry to organize dense information.
+- **Do** combine authored serif headings with short, readable Manrope explanations.
+- **Do** use thin rules, open spacing, and role-based corner radii to organize dense information.
 - **Do** preserve the full narrative in mobile and reduced-motion layouts.
-- **Do** reserve orange for unmistakable interaction state and cobalt for authored emphasis.
+- **Do** reserve cobalt for interaction state and authored emphasis.
 
 ### Don't:
 
